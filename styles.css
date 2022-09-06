@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --left-bg-color: rgb(250, 115, 5, 0.8);
-    --right-bg-color: rgba(0, 69, 181, 0.8);
+    --left-bg-color: rgb(250, 115, 5, 0.6);
+    --right-bg-color: rgba(0, 69, 181, 0.6);
     --left-btn-hover-color: rgba(87, 84, 236, 0.8);
     --right-btn-hover-color: rgb(255, 255, 255, 0.8);
     --hover-width: 75%;
@@ -115,12 +115,20 @@ h1{
   width: var(--hover-width);
 }
 
+.hover-left .split.left::before{
+  background-color: rgb(250, 115, 5, 0.1);
+}
+
 .hover-left .right {
   width: var(--other-width);
 }
 
 .hover-right .right {
   width: var(--hover-width);
+}
+
+.hover-right .split.right::before{
+  background-color: rgba(0, 69, 181, 0.1);
 }
 
 .hover-right .left {
